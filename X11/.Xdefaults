@@ -1,0 +1,75 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!-------------------------------------------------------------------------------
+! urxvt settings
+!-------------------------------------------------------------------------------
+urxvt.depth:                32
+urxvt.geometry:             90x30
+urxvt.transparent:          false
+urxvt.fading:               0
+urxvt.termName:             rxvt
+! urxvt.urgentOnBell:         true
+! urxvt.visualBell:           true
+urxvt.loginShell:           true
+urxvt.internalBorder:       3
+urxvt.lineSpace:            0
+urxvt.letterSpace:          -2
+urxvt.shading:              30
+urxvt.inheritPixmap:        True
+! Fonts
+urxvt.allow_bold:           true
+urxvt.foreground:           rgba:ffff/ffff/ffff/ffff
+urxvt.background:           rgba:0000/0000/0000/cccc
+urxvt.color4:               #5566FF
+urxvt.color12:              #7799FF
+urxvt.color9:               #FF3333
+urxvt.color11:              #BBBB22
+urxvt.saveLines:            20000
+#remove Lock = Caps_Lock
+#remove Control = Control_L
+#keysym Control_L = Control_L
+#keysym Caps_Lock = Control_L
+#add Lock = Caps_Lock
+#add Control = Control_L
+urxvt.font:                 xft:Liberation Mono:size=11:antialias=true 
+urxvt.boldFont:             xft:Liberation Mono:Bold:size=11:antialias=true 
+URxvt.italicFont:           xft:Liberation Mono:Bold:size=11:antialias=true 
+URxvt.boldItalicFont:       xft:Liberation Mono:Bold:size=11:antialias=true 
+
+! --------
+!  clipboard
+! --------
+urxvt.perl-lib:             /home/tomi/.urxvt/urxvt-perls
+urxvt.perl-ext-common:      clipboard
+URxvt.perl-ext-common:      default,clipboard,resize-font,tabbed,url-select,keybord-select
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:avtivate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+! -- copy and paste C + v and C + v
+URxvt.iso14755: false
+URxvt.keysym.Control-C:     perl:clipboard:copy
+URxvt.keysym.Control-V:     perl:clipboard:paste
+URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
+! --------
+! change tab color
+! --------
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+! --------
+! change font size on the fly
+! --------
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+URxvt.iso14755: false
+URxvt.iso14755_52: false
